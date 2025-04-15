@@ -1,0 +1,18 @@
+AddDefaultCharset utf-8
+#Options All -Indexes
+RewriteEngine On
+# Bloqueo de Directorios
+RewriteRule (^|/)class(/|$) - [F]
+#bloqueo de archivos
+<Files .htaccess>
+Order allow,deny
+Deny from all
+</Files>
+
+#Opciones de Inico
+RewriteRule ^login$ login.php
+
+
+
+
+
